@@ -8,7 +8,7 @@ class GreetingsController < ApplicationController
     render json: { greetings: [
       {
         id: greeting.greeting.id,
-        title: greeting.greeting.message
+        message: greeting.greeting.message
       }
     ] }.to_json
   end
